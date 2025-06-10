@@ -1,0 +1,137 @@
+{
+  // Extensions
+  "auto_install_extensions": {
+    "html": true,
+    "nix": true,
+    "astro": true,
+    "symbols": true, // Icon theme
+    "catppuccin": true // Themes
+  },
+  // Telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // Visuals
+  "ui_font_size": 16,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 16,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "theme": {
+    "mode": "dark",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
+  "icon_theme": "Symbols",
+
+  // Editor
+  "format_on_save": "on",
+  "ensure_final_newline_on_save": true,
+  "restore_on_startup": "last_session",
+  "auto_update": false,
+  "edit_predictions": {
+    "disabled_globs": [
+      "**/.env*",
+      "**/*.pem",
+      "**/*.key",
+      "**/*.cert",
+      "**/*.crt",
+      "**/.dev.vars",
+      "**/secrets.yml"
+    ]
+  },
+  "edit_predictions_disabled_in": ["string", "comment"],
+  "multi_cursor_modifier": "alt",
+  "project_panel": {
+    "dock": "right"
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "hide_mouse": "on_typing_and_movement",
+  "cursor_blink": false,
+  "relative_line_numbers": true,
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "tab_size": 2,
+
+  // Git
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+
+  // LSP
+  "lsp": {
+    "nixd": {
+      "settings": {
+        "diagnostic": {
+          "suppress": ["sema-extra-with"]
+        }
+      }
+    }
+  },
+
+  // Languages
+  "languages": {
+    "Astro": {
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "Markdown": {
+      "remove_trailing_whitespace_on_save": true
+    },
+    "TypeScript": {
+      "prettier": {
+        // I prefer ESLint
+        "allowed": false
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "JavaScript": {
+      "prettier": {
+        // Same as TS
+        "allowed": false
+      },
+      "formatter": {
+        "code_actions": {
+          "source.fixAll.eslint": true
+        }
+      }
+    },
+    "Nix": {
+      "language_servers": ["nixd", "!nil"],
+      "formatter": {
+        "external": {
+          "command": "alejandra",
+          "arguments": ["--quiet", "--"]
+        }
+      }
+    }
+  },
+
+  // Key bindings
+  "base_keymap": "VSCode",
+
+  // AI
+  "features": {
+    "edit_prediction_provider": "zed"
+  }
+}
