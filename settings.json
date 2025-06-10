@@ -5,7 +5,8 @@
     "nix": true,
     "astro": true,
     "symbols": true, // Icon theme
-    "catppuccin": true // Themes
+    "catppuccin": true, // Themes
+    "codebook": true
   },
   // Telemetry
   "telemetry": {
