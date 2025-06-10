@@ -6,7 +6,8 @@
     "astro": true,
     "symbols": true, // Icon theme
     "catppuccin": true, // Themes
-    "codebook": true
+    "codebook": true,
+    "basher": true
   },
   // Telemetry
   "telemetry": {
