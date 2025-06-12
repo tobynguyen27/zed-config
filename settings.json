@@ -8,7 +8,8 @@
     "catppuccin": true, // Themes
     "codebook": true,
     "basher": true,
-    "toml": true
+    "toml": true,
+    "emmet": true
   },
   // Telemetry
   "telemetry": {
