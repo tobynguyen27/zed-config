@@ -1,0 +1,14 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-p": "command_palette::Toggle"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "f": "workspace::ActivatePaneLeft"
+    }
+  }
+]
