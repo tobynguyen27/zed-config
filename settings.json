@@ -63,6 +63,9 @@
     "coloring": "indent_aware"
   },
   "tab_size": 2,
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
 
   // Git
   "git": {
@@ -108,6 +111,7 @@
       }
     },
     "Markdown": {
+      "soft_wrap": "preferred_line_length",
       "remove_trailing_whitespace_on_save": true
     },
     "TypeScript": {

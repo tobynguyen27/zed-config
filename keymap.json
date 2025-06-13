@@ -2,7 +2,9 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-p": "command_palette::Toggle"
+      "cmd-shift-p": "command_palette::Toggle",
+      "alt-r": "projects::OpenRecent",
+      "alt-k": "zed::OpenKeymap"
     }
   },
   {
